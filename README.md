@@ -46,6 +46,33 @@
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
 
+### [Vencord](https://vencord.dev/)/[Vesktop](https://vesktop.dev/)
+
+1. Navigate to: Settings -> Vencord Settings -> Themes -> Online Themes
+2. Add latte as the light theme and your preferred dark flavour.
+
+```css
+/* latte */
+@light https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css
+/* Your dark flavour of choice (only add one) */
+/* frappe */
+@dark https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css
+/* macchiato */
+@dark https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css
+/* mocha */
+@dark https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css
+```
+You can also append Catppuccin colors to customize the accent, e.g.
+```css
+/* latte (maroon accent) */
+@light https://catppuccin.github.io/discord/dist/catppuccin-latte-maroon.theme.css
+/* mocha (pink accent)*/
+@dark https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css
+```
+
+The `@light` and `@dark` prefix ensures, that the flavours are applied on top of the correct Discord theme.
+It also allows toggeling between a light and a dark theme, without having to change the link.
+
 ### Clients/Mods with custom CSS support
 
 1. Simply add your preferred flavour into your discord clients CustomCSS file/editor.
